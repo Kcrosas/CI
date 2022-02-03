@@ -19,7 +19,7 @@ describe("This confirms that tests is being run", () => {
 
 describe("This describes that we have a working GET route", () => {
   it("Responses with 200", () => {
-    expect(true).to.equals(true);
+    //expect(true).to.equals(true);
     request(app)
       .get("/")
       .expect(200)
@@ -28,3 +28,27 @@ describe("This describes that we have a working GET route", () => {
       });
   });
 });
+
+// describe("This describes that we have a working API routes", () => {
+//   beforeEach(async () => {
+//     await syncAndSeed();
+//   });
+//   it("Movie collection is coming in", () => {
+//     expect(true).to.equals(true);
+//     request(app)
+//       .get("/api/movies")
+//       .expect()
+//       .end((error) => {
+//         if (error) throw error;
+//       });
+//   });
+// });
+
+//example test
+/*
+expect length to be something... 
+api/movies .length to equal something 
+api/actors .length to equal something 
+test starwars.actorID should equal the id of mark hammel 
+
+*/
